@@ -59,7 +59,7 @@ cd ..
 wget https://huggingface.co/RaphaelLiu/EvalCrafter-Models/resolve/main/FlowNet2_checkpoint.pth.tar
 
 # Count-Score, Color-Score, Detection-Score
-gdown --id '1QoChMkTVxdYZ_eBlZhK2acq9KMQZccPJ' --output ./ckpt/R50_DeAOTL_PRE_YTB_DAV.pth
+gdown --no-check-certificate "https://drive.google.com/uc?id=1QoChMkTVxdYZ_eBlZhK2acq9KMQZccPJ" --output ./ckpt/R50_DeAOTL_PRE_YTB_DAV.pth
 wget -P ./ckpt https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth
 wget -P ./ckpt https://huggingface.co/ShilongLiu/GroundingDINO/resolve/main/groundingdino_swint_ogc.pth
 git clone https://huggingface.co/bert-base-uncased
