@@ -11,3 +11,4 @@ noise_to_prompts.py
 checkpoints/
 videos/
 eval_from_metrics_local.py
+merged_videos

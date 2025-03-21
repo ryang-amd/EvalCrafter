@@ -4,51 +4,51 @@ dir_videos=$2
 # [need for speicific platform] pip install spatial_correlation_sampler
 pip install spatial_correlation_sampler==0.4.0
 
-# Celebrity ID Score
-cd $EC_path
-cd ./metrics/deepface
-python3 celebrity_id_score.py --dir_videos  $dir_videos
+# # Celebrity ID Score
+# cd $EC_path
+# cd ./metrics/deepface
+# python3 celebrity_id_score.py --dir_videos  $dir_videos
 
-# IS
-cd $EC_path
-cd ./metrics
-python3 is.py --dir_videos $dir_videos 
+# # IS
+# cd $EC_path
+# cd ./metrics
+# python3 is.py --dir_videos $dir_videos 
 
 # # OCR Score
 cd $EC_path
 cd ./metrics
 python3 ocr_score.py --dir_videos $dir_videos --metric 'ocr_score'
 
-# # VQA_A and VQA_T
-cd $EC_path
-cd ./metrics/DOVER
-python3 evaluate_a_set_of_videos.py --dir_videos $dir_videos
+# # # VQA_A and VQA_T
+# cd $EC_path
+# cd ./metrics/DOVER
+# python3 evaluate_a_set_of_videos.py --dir_videos $dir_videos
 
 
-# CLIP-Score 
-cd $EC_path
-cd ./metrics/Scores_with_CLIP 
-python3 Scores_with_CLIP.py --dir_videos $dir_videos --metric 'clip_score'
+# # CLIP-Score 
+# cd $EC_path
+# cd ./metrics/Scores_with_CLIP 
+# python3 Scores_with_CLIP.py --dir_videos $dir_videos --metric 'clip_score'
 
-# Face Consistency 
-cd $EC_path
-cd ./metrics/Scores_with_CLIP 
-python3 Scores_with_CLIP.py --dir_videos $dir_videos --metric 'face_consistency_score'
+# # Face Consistency 
+# cd $EC_path
+# cd ./metrics/Scores_with_CLIP 
+# python3 Scores_with_CLIP.py --dir_videos $dir_videos --metric 'face_consistency_score'
 
-# SD-Score 
-cd $EC_path
-cd ./metrics/Scores_with_CLIP 
-python3 Scores_with_CLIP.py --dir_videos $dir_videos --metric 'sd_score'
+# # SD-Score 
+# cd $EC_path
+# cd ./metrics/Scores_with_CLIP 
+# python3 Scores_with_CLIP.py --dir_videos $dir_videos --metric 'sd_score'
 
-# BLIP-BLUE 
-cd $EC_path
-cd ./metrics/Scores_with_CLIP 
-python3 Scores_with_CLIP.py --dir_videos $dir_videos --metric 'blip_bleu'
+# # BLIP-BLUE 
+# cd $EC_path
+# cd ./metrics/Scores_with_CLIP 
+# python3 Scores_with_CLIP.py --dir_videos $dir_videos --metric 'blip_bleu'
 
-# CLIP-Temp 
-cd $EC_path
-cd ./metrics/Scores_with_CLIP 
-python3 Scores_with_CLIP.py --dir_videos $dir_videos --metric 'clip_temp_score'
+# # CLIP-Temp 
+# cd $EC_path
+# cd ./metrics/Scores_with_CLIP 
+# python3 Scores_with_CLIP.py --dir_videos $dir_videos --metric 'clip_temp_score'
 
 # # # Action Score
 cd $EC_path
